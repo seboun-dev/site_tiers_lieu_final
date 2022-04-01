@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Club VSCouëron</title>
+	<link rel="stylesheet" href="/assets/index.css" />
+	<link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="/assets/roundies.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="page">
+		<p><span class="ligne_en_trop"><br /></span></p>
+		<img src="/assets/images/photo_nature.jpg" id="fond" alt="fond" />
+		<div id="class_img">
+			<header>
+				<img src="/assets/images/header_background.jpg" class="photo" alt="header" />
+				<span><br /></span>
+			</header>
+			<nav>
+				<ul id="menu">
+
+					<li>
+						<a href="index.html" style="margin-left: 0px;">Accueil</a>
+					</li>
+
+					<li>
+						<a href="/assets/agenda.html">Evenements</a>
+					</li>
+
+					<li>
+						<a href="/assets/ecole_route_vtt.html">Ecole ROUTE-VTT</a>
+					</li>
+
+					<li id="onclich">
+						<a onclick="(function() {
+									if (window.matchMedia('(max-width: 999px) , handheld').matches) {
+									var monLi = document.querySelectorAll('.deroulement');
+								if(getComputedStyle(monLi[0]).maxHeight=='0px' && (monLi[0].style.maxHeight==0 || monLi[0].style.maxHeight=='0px')){
+								
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '15em';
+								monLi[i].style.borderTop = 'solid 1px #333A40';
+								monLi[i].style.borderRadius = '0 0 6px 6px';
+								monLi[i].style.transition = 'all 1s';}
+								}
+								else
+								{
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '0';
+								monLi[i].style.borderTop = 'none';
+								monLi[i].style.borderRadius = '0';
+								monLi[i].style.transition = 'all 1s';}
+								}
+
+								}})();" onmouseover="(function(){if (!(window.matchMedia('(max-width: 999px) , handheld').matches)){
+								var monLi = document.querySelectorAll('.deroulement');
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '100px';
+								monLi[i].style.transition = 'all .5s';}
+								}
+								})();" class="menu_avec_sous_menu">Calendriers jeunes</a>
+						<ul>
+							<li class="deroulement"><a href="/assets/calendriers_route.html" class="sous_a">ROUTE</a></li>
+							<li class="deroulement"><a href="/assets/calendriers_vtt.html">VTT</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="/assets/activites_route.html">Activités ROUTE</a>
+
+					</li>
+
+					<li id="onclich2">
+						<a onclick="(function() {
+									if (window.matchMedia('(max-width: 999px) , handheld').matches) {
+									var monLi = document.querySelectorAll('.deroulement2');
+								if(getComputedStyle(monLi[0]).maxHeight=='0px' && (monLi[0].style.maxHeight==0 || monLi[0].style.maxHeight=='0px')){
+								
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '15em';
+								monLi[i].style.borderTop = 'solid 1px #333A40';
+								monLi[i].style.borderRadius = '0 0 6px 6px';
+								monLi[i].style.transition = 'all 1s';}
+								}
+								else
+								{
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '0';
+								monLi[i].style.borderTop = 'none';
+								monLi[i].style.borderRadius = '0';
+								monLi[i].style.transition = 'all 1s';}
+								}
+
+								}})();" onmouseover="(function(){if (!(window.matchMedia('(max-width: 999px) , handheld').matches)){
+								var monLi = document.querySelectorAll('.deroulement2');
+								for (var i=0 ; i<monLi.length ; i++)
+								{
+								monLi[i].style.maxHeight= '100px';
+								monLi[i].style.transition = 'all .5s';}
+								}
+								})();" class="menu_avec_sous_menu">Activités VTT</a>
+						<ul>
+							<li class="deroulement2"><a href="/assets/activites_vtt.html" class="sous_a">Présentation</a>
+							</li>
+							<li class="deroulement2"><a href="/assets/calendrier_adulte_vtt.html">Calendrier</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</nav>
+			<div id="fond_transp">
+				<article>
+					<p class="ligne_en_trop"><br /><br /><br /><br /></p>
+					<p class="bienvenue">Ce club est affilié à la <br /><a href="http://ffct.org"
+							class="hyperliens">Fédération Française de CycloTourisme</a>.</p>
+					<img src="/assets/images/photo_club.jpg" class="photo" alt="club" width="550" style="margin:auto;" />
+					<p class="bienvenue">Bienvenue sur ce site, pour découvrir nos activités.<br /><br />Cet espace est
+						tout d'abord celui des membres, qu'il vous aide à bénéficier au maximum de ce que le club
+						propose.<br />A ce jour, il rassemble 140 membres de 8 à 88 ans, sur routes ou dans les
+						chemins.<br />Tous animés de la même passion : se faire plaisir à vélo.</p>
+					<p class="ligne_en_trop"><br /></p>
+				</article>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="/assets/jquery-1.11.2.js"></script>
+<script src="/assets/index.js"></script>
+
+</html>
